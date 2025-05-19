@@ -109,7 +109,7 @@ jobs:
           APPSTORE_P8: ${{ secrets.APPSTORE_P8 }}
 
           IOS_BUILD_PATH: ${{ format('{0}/build/iOS', github.workspace) }}
-          IOS_BUNDLE_ID: com.protprojcard.app
+          IOS_BUNDLE_ID: com.annacardplay.app
           APP_VERSION: "1.0.0"
           PROJECT_NAME: Fools Meister Cards
         run: |
