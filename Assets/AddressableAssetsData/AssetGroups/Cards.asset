@@ -1,0 +1,205 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Cards
+  m_EditorClassIdentifier: 
+  m_GroupName: Cards
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 4d9154efd68b68843adc72c0ace1aabc
+  m_SerializeEntries:
+  - m_GUID: 827b35878fa95b54082fb69ad56cd04c
+    m_Address: KingHearts
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e3bf2670507e52e49b9a18ccaba1c95e
+    m_Address: NineHearts
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 547018e5255e78a43aa441f8afa2d8de
+    m_Address: AceHearts
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 557cec5d303b8844295c8c53081b1cab
+    m_Address: TenHearts
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c9b8311d5e518624fba9e0ca93df40c5
+    m_Address: QueenHearts
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c3060abd5701ec84486d5fdb6abce0b3
+    m_Address: SixHearts
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: caade4438186fe841b9804f5e0ed04a0
+    m_Address: SevenHearts
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 46888aa4a1972b54588d2ed20335a3f5
+    m_Address: EightHearts
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 619dc97e6f54e9b43b2169aeb5e20387
+    m_Address: JokerHearts
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2ffcc3624d6d5bb48ab39d5d9f128777
+    m_Address: KingSpades
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0a55c1d5e4ad94345a8b1ae6960ded02
+    m_Address: EightSpades
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4de7c1e1949543d42ac21e5d677e5059
+    m_Address: AceSpades
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a605be238ab0ca469f0191f7fa51f22
+    m_Address: QueenSpades
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 687499f041b251a4db42f2fabc6f05dc
+    m_Address: JokerSpades
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 50adfdc64ba0dbb428aa4ec7c639255a
+    m_Address: SixSpades
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 090e4de414685fb40878955c8d577b80
+    m_Address: SevenSpades
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2ae2f759b2fde374ebd27adf11985087
+    m_Address: NineSpades
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c2fbcc49ff953244990eb8271d5d9c18
+    m_Address: TenSpades
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d1f9d8460bf272848932fffd55927850
+    m_Address: JokerDiamonds
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4ec4ddc7a68d535419129eb0037b5255
+    m_Address: QueenDiamonds
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: af41e96228bf843409247df43f4e32d9
+    m_Address: KingDiamonds
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5f6497854999af747aaa488d65d4ada4
+    m_Address: SevenDiamonds
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f6e5994c4f7a3c4da1af05e4d823fd3
+    m_Address: TenDiamonds
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8d500dcfd2c8f8d429ffe63fd65e7105
+    m_Address: SixDiamonds
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f82699d4b0437f042a2e46893feaaa9e
+    m_Address: AceDiamonds
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b1a1ad814f105ee4798c08ecf514a92f
+    m_Address: NineDiamonds
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d08d573bf5b7d894495befcb8086e627
+    m_Address: EightDiamonds
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 84845976934570049ac90711535dfeb8
+    m_Address: TenClubs
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b1d38bcd90f3c4b4792cc52a1f668236
+    m_Address: SevenClubs
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1beaf70f91da32b4ab0f0b624613752f
+    m_Address: QueenClubs
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2f67acc9789147489922df7905c1613
+    m_Address: SixClubs
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 810a9b485cdd6424381cb8ce2c4e501a
+    m_Address: NineClubs
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 15a33504bb3cd294696b9c6561fdb79d
+    m_Address: EightClubs
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c192d6bbd477bee4baa22d5afdd713e6
+    m_Address: JokerClubs
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 84abcae0a6b56794b92144c677576461
+    m_Address: KingClubs
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f3fb19e0198e5a7468bf0968564999f7
+    m_Address: AceClubs
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 7d752932e8fd48a4dac3e89a2995cf67, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 98d66e9f3be454d4199b4f1ff32fffbb, type: 2}
+    - {fileID: 11400000, guid: feaea709848ecda40a112a72b26f1970, type: 2}

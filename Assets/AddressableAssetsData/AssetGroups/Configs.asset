@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Configs
+  m_EditorClassIdentifier: 
+  m_GroupName: Configs
+  m_Data:
+    m_SerializedData: []
+  m_GUID: ce879aa1b21471a4b99a1f8b6d5dda3a
+  m_SerializeEntries:
+  - m_GUID: 99132ab761a63f74693fb8b9971d5dbe
+    m_Address: AudioConfig
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f097a20d7cd2b2849aa64408d57a4c3c
+    m_Address: GameConfig
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a5c78ffd9bd8ba4b8791da9bd3a681a
+    m_Address: ValidationConfig
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 13b09d2eb767a154e8daf0928d0d197a
+    m_Address: AvatarSelectionConfig
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3ae3239d39cc87f4d8e9e348ce08ca9d
+    m_Address: FoolGameConfig
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 257b3de0a646a06499f79ada1971b419
+    m_Address: BotNameConfig
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 64359be56bd3c284498eb6da07745b86
+    m_Address: BotThoughts
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e9c36d686cba559469626845951016e3
+    m_Address: ScreenOrientationConfig
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 7d752932e8fd48a4dac3e89a2995cf67, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 2257be2488f13da43a04d33d6fcb3e3b, type: 2}
+    - {fileID: 11400000, guid: 3144e7edfe8b0c946bd6cbe9ef7b5648, type: 2}

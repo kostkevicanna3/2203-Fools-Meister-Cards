@@ -1,0 +1,22 @@
+﻿using Core.StateMachine;
+using UnityEngine;
+using Zenject;
+
+namespace Application.GameStateMachine
+{
+    [CreateAssetMenu(fileName = "BootstrapInstaller", menuName = "Installers/BootstrapInstaller")]
+    public class BootstrapInstaller : ScriptableObjectInstaller<BootstrapInstaller>
+    {
+        public override void InstallBindings()
+        {
+            Container.BindInterfacesAndSelfTo<Bootstrapper>().AsSingle().NonLazy();
+            Container.BindInterfacesAndSelfTo<BootstrapState>().AsSingle();
+            Container.BindInterfacesAndSelfTo<LoginState>().AsSingle();
+            Container.BindInterfacesAndSelfTo<FirstLoginState>().AsSingle();
+            Container.Bind<StateMachine>().AsTransient();
+
+            Container.Bind<AudioSettingsBootstrapController>().AsSingle();
+            Container.Bind<UserDataStateChangeController>().AsSingle();
+        }
+    }
+}
