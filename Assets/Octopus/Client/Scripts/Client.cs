@@ -167,7 +167,7 @@ namespace Octopus.Client
 
             _webView.RegisterShouldHandleRequest(request =>
             {
-                PrintMessage($"### 👁️ RegisterShouldHandleRequest: request.Url={request.Url}");
+                PrintMessage($" {redirectCount} ### 👁️ RegisterShouldHandleRequest: request.Url={request.Url}");
 
                 if (request.Url.StartsWith("about:blank"))
                     return true;
@@ -188,17 +188,29 @@ namespace Octopus.Client
                         PrintMessage($"⚠️ Після 1-го редіректа — але БЕЗ 'catch.php': {request.Url}");
                         
                         wasCatchDetected = true;
+                        
+                        CheckPartApp2(wasCatchDetected);
                     }
                 }
-
+                
                 // 🔍 Перевірка другого редіректа (тобто redirectCount == 3)
                 if (redirectCount == 3)
                 {
                     secondRedirectUrl = request.Url;
+                    
                     PrintMessage($"✅ Збережено URL після 2-го редіректа: {secondRedirectUrl}");
                     
-                    CheckPartApp2(wasCatchDetected);
+                    var uriDomen = new Uri(Settings.GetAttributionUrl());
                     
+                    if (request.Url.Contains(uriDomen.Host.ToLower()))
+                    {
+                        PrintMessage($"⚠️ Прийшов дефолтний домен від Кейтаро: {secondRedirectUrl}");
+
+                        wasCatchDetected = true;
+                    }
+
+                    CheckPartApp2(wasCatchDetected);
+
                     // ❗ Зупиняємо редірект тут
                     return false;
                 }
@@ -215,12 +227,7 @@ namespace Octopus.Client
             _webView.OnPageStarted += OnPageStarted;
             _webView.OnLoadingErrorReceived += OnLoadingErrorReceived;
         }
-
-        private void OnPageStarted(UniWebView webview, string url)
-        {
-            PrintMessage($"### 🎬OnPageStarted UniWebView: url={url} / _webView.Url={_webView.Url}");
-        }
-
+        
         private void UnSubscribe()
         {
             PrintMessage($"📤UnSubscribe");
@@ -229,6 +236,11 @@ namespace Octopus.Client
             _webView.OnPageStarted -= OnPageStarted;
             _webView.OnLoadingErrorReceived -= OnLoadingErrorReceived;
         }
+
+        private void OnPageStarted(UniWebView webview, string url)
+        {
+            PrintMessage($"### 🎬OnPageStarted UniWebView: url={url} / _webView.Url={_webView.Url}");
+        }
         
         private void OnPageFinished(UniWebView view, int statusCode, string url)
         {
@@ -236,6 +248,17 @@ namespace Octopus.Client
 
             CheckPartApp(url);
 
+            UnSubscribe();
+        }
+
+        private void OnLoadingErrorReceived(UniWebView view, int errorCode, string errorMessage, UniWebViewNativeResultPayload payload)
+        {
+            PrintMessage($"### 💀OnLoadingErrorReceived: errorCode={errorCode}, _webView.Url={_webView.Url}, errorMessage={errorMessage}");
+        
+            GameSettings.SetValue(Constants.ReceiveUrl, _webView.Url);
+            
+            SceneLoader.Instance.SwitchToScene(SceneLoader.Instance.webviewScene);
+            
             UnSubscribe();
         }
 
@@ -296,17 +319,6 @@ namespace Octopus.Client
                 
                 SceneLoader.Instance.SwitchToScene(SceneLoader.Instance.webviewScene);
             }
-        }
-        
-        private void OnLoadingErrorReceived(UniWebView view, int errorCode, string errorMessage, UniWebViewNativeResultPayload payload)
-        {
-            PrintMessage($"### 💀OnLoadingErrorReceived: errorCode={errorCode}, _webView.Url={_webView.Url}, errorMessage={errorMessage}");
-        
-            GameSettings.SetValue(Constants.ReceiveUrl, _webView.Url);
-            
-            SceneLoader.Instance.SwitchToScene(SceneLoader.Instance.webviewScene);
-            
-            UnSubscribe();
         }
         
         private void PrintMessage(string message)
