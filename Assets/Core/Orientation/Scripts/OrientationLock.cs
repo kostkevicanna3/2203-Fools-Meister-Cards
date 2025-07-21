@@ -1,9 +1,8 @@
-using System.Collections;
 using UnityEngine;
 
-namespace Orientation
+namespace OrientationLock
 {
-    public class Orientation : MonoBehaviour
+    public class OrientationLock : MonoBehaviour
     {
         public enum OrientationMode
         {
@@ -17,23 +16,9 @@ namespace Orientation
 
         protected void Awake()
         {
-            ForcePortraitThenAutorotate();
-        }
-
-        private void ForcePortraitThenAutorotate()
-        {
-            Screen.orientation = orientationMode == OrientationMode.Portrait? ScreenOrientation.Portrait : ScreenOrientation.LandscapeLeft;
-
-            StartCoroutine(EnableAutoRotationNextFrame());
-        }
-
-        private IEnumerator EnableAutoRotationNextFrame()
-        {
-            yield return null; 
-            
             SetAutoRotate();
         }
-        
+
         private void SetAutoRotate()
         {
             switch (orientationMode)

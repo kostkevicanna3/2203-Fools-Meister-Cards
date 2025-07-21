@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ee4cd9b-8076-4988-9c86-72dda2f57c90" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Octopus/Client/Scripts/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Octopus/Client/Scripts/Client.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.2203-Fools-Meister-Cards-2/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2203-Fools-Meister-Cards-2/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.2203-Fools-Meister-Cards-2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2203-Fools-Meister-Cards-2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/link.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/link.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Orientation/Orientation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/UniWebView/settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/UniWebView/settings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Octopus/SceneLoaderCore/Example/Scenes/Webview.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Octopus/SceneLoaderCore/Example/Scenes/Webview.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +23,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Octopus/Client/Scripts/Client.cs" />
+        <option value="$PROJECT_DIR$/Assets/Core/Orientation/Orientation.cs" />
       </list>
     </option>
   </component>
@@ -28,17 +36,45 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="0ee4cd9b-8076-4988-9c86-72dda2f57c90" name="Default Changelist" comment="" />
       <created>1753090816334</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1753090816334</updated>
       <workItem from="1753090818817" duration="13000" />
+      <workItem from="1753107200626" duration="565000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
